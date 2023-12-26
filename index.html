@@ -5,22 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>References of group 13</title>
   <style>
-      .kv .text h1 {
-  color: white;
-  font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 50px;
-}
-        
     body {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       margin: 0;
       background-image: url(https://images.unsplash.com/photo-1576879594530-ee9b1545923c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-      background-size: cover; /* Resize the background image to cover the entire viewport */
-      background-position: center; /* Center the background image */
+      background-size: cover;
+      background-position: center;
     }
 
     /* Style the link as a button */
@@ -79,12 +73,17 @@
     #delayed-link4:hover {
       background-color: #c0392b;
     }
+
+    /* Centered text with yellow color */
+    .centered-text {
+      color: yellow;
+      font-size: 24px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
- <div class="text">
-                    <h1>References of group 13</h1>
-                </div>
+
   <!-- Button 1 -->
   <a href="#" id="delayed-link1" class="button-link">What Is Voice Recognition?</a>
 
@@ -96,6 +95,9 @@
 
   <!-- Button 4 -->
   <a href="#" id="delayed-link4" class="button-link">AI Caregiver: Application of Voice Recognition</a>
+
+  <!-- Centered text -->
+  <div class="centered-text">This is the centered text with yellow color</div>
 
   <script>
     // JavaScript code to add a time delay before navigating to the link
