@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>References of group 13</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(45deg, #3498db, #8e44ad); /* Gradient background */
+    }
+
+    /* Style the link as a button */
+    .button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      margin: 10px; /* Optional: Add margin for spacing between buttons */
+      border-radius: 5px; /* Optional: rounded corners */
+      transition: transform 0.3s; /* Smooth transition for scaling effect */
+    }
+
+    /* Button 1 color */
+    #delayed-link1 {
+      background-color: #e97dac;
+      color: #fff;
+    }
+
+    /* Button 2 color */
+    #delayed-link2 {
+      background-color: #2ecc71;
+      color: #fff;
+    }
+
+    /* Button 3 color */
+    #delayed-link3 {
+      background-color: #9b59b6;
+      color: #fff;
+    }
+
+    /* Button 4 color */
+    #delayed-link4 {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    /* Hover effect: Scale up on hover */
+    .button-link:hover {
+      transform: scale(1.1); /* Scale up by 10% on hover */
+    }
+
+    /* Hover effect: Change background color on hover */
+    #delayed-link1:hover {
+      background-color: #e97dac;
+    }
+
+    #delayed-link2:hover {
+      background-color: #27ae60;
+    }
+
+    #delayed-link3:hover {
+      background-color: #8e44ad;
+    }
+
+    #delayed-link4:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button 1 -->
+  <a href="#" id="delayed-link1" class="button-link">What Is Voice Recognition?</a>
+
+  <!-- Button 2 -->
+  <a href="#" id="delayed-link2" class="button-link">Natural Language Processing (NLP)</a>
+
+  <!-- Button 3 -->
+  <a href="#" id="delayed-link3" class="button-link">What is a Voice Assistant?</a>
+
+  <!-- Button 4 -->
+  <a href="#" id="delayed-link4" class="button-link">AI Caregiver: Application of Voice Recognition</a>
+
+  <script>
+    // JavaScript code to add a time delay before navigating to the link
+    function addDelayListener(buttonId, linkUrl) {
+      document.getElementById(buttonId).addEventListener("click", function(event) {
+        // Prevent the default link behavior
+        event.preventDefault();
+
+        // Set the delay in milliseconds (e.g., 2000 milliseconds = 2 seconds)
+        var delay = 2000;
+
+        // Use setTimeout to introduce the delay and then navigate to the link
+        setTimeout(function() {
+          window.location.href = linkUrl; // Replace with your desired URL
+        }, delay);
+      });
+    }
+
+    // Add listeners for each button
+    addDelayListener("delayed-link1", "https://www.g2.com/articles/voice-recognition/");
+    addDelayListener("delayed-link2", "https://monkeylearn.com/natural-language-processing/");
+    addDelayListener("delayed-link3", "https://www.hyro.ai/glossary/voice-assistant-va/");
+    addDelayListener("delayed-link4", "https://www.ankecare.com/article/2065-2022-07-22-18-12-21");
+  </script>
+
+</body>
+</html>
